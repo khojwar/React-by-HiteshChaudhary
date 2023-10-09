@@ -1,0 +1,59 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Build files
+build/
+dist/
+*.swp
+*.swo
+.swo
+.swp
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE-specific files and folders
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Log files
+logs/
+*.log
+
+# Coverage reports
+coverage/
+
+# Editor configuration
+*.editorconfig
+
+# Pid files
+*.pid
+
+# Cache folders
+.cache/
+
+# Compiled Python files
+__pycache__/
+
+# User-specific files
+*.iml
+*.idea/
+*.DS_Store
+*.project
+*.classpath
+
+# Dependency directories
+.idea/
