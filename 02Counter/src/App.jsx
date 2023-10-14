@@ -37,6 +37,8 @@ function App() {
 
       <p>The counter value is {counter}</p>
 
+      <p>footer: {counter}</p>
+
     </>
   )
 }
