@@ -7,12 +7,12 @@ import { TodoItem } from './components'
 function App() {
   const [todos, setTodos] = useState([])
 
-  const addTodo = (todo) => {
-    setTodos((prev) => [{id: Date.now(), ...todo}, ...prev])
+  const addTodo = (todo) => {    // "todo" haamile pathaaune value ho
+    setTodos((prev) => [{id: Date.now(), ...todo}, ...prev])    // bhayako data laai manipulate gareko
   }
 
-  const deleteTodo = (id) => {
-    setTodos((prev) => prev.filter((todo) => todo.id !== id))
+  const deleteTodo = (id) => {        // "id" haamile pathaaune id ho
+    setTodos((prev) => prev.filter((todo) => todo.id !== id))    // bhayako data laai manipulate gareko based on hamro id
   }
 
   const updateTodo = (id, todo) => {
@@ -26,7 +26,7 @@ function App() {
     prevTodo.id === id ? {...prevTodo, completed: !prevTodo.completed} : prevTodo))
   }
 
-
+  // ------------Local Storage-----------------------------
   // localStorage take only string as value so we need to convert our array to string using JSON.stringify and when we get the value from localStorage we need to convert it back to array using JSON.parse
   useEffect(() => {
     const todos = JSON.parse(localStorage.getItem('todos')) // getItem only take id as value
